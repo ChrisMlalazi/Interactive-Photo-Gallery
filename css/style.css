@@ -24,7 +24,7 @@ Search Field
 ******************/
 
 .field {
-  background-color: white;
+  background-color: grey;
 }
 
 input[type="search"] {
