@@ -85,6 +85,13 @@ var prevNext = function(prev ) {
   updateImage(imageLocation, imageCaption);
 }
 
+
+// Hide Overlay function
+function hideOverlay() {
+ $overlay.hide();
+}
+
+
 //Button events
 
 $("#btnPrev").click(function(event){
@@ -95,21 +102,24 @@ $("#btnNext").click(function(event){
   prevNext();
 });
 
-$("#btnClose").click(function(event){
-  //3.1 Hide the overlay  
+//Exit Button
 
-   $(this).hide();
+// Exit button
+$("#btnClose").click(function(){
+   hideOverlay();
 });
 
-document.getElementById("closecover").onclick = function() { 
-  coverimage.setAttribute("src", "");
-  cover.close(); 
-}
+//When overlay is click
+$overlay.click(function(event){
 
-/********************************
-CLOSE
-*********************************/
+     hideOverlay();
+});
 
+
+// // document.getElementById("closecover").onclick = function() { 
+// //   coverimage.setAttribute("src", "");
+// //   cover.close(); 
+// }
 
 
 
