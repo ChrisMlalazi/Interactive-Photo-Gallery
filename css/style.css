@@ -160,7 +160,7 @@ Remove Overlay Buttons Outline
   outline:none;
 }
 
-#overlay #btPrev:focus {
+#overlay #btnPrev:focus {
   outline:none;
 }
 
