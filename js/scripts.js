@@ -95,6 +95,12 @@ $("#btnNext").click(function(event){
   prevNext();
 });
 
+$("#btnClose").click(function(event){
+  //3.1 Hide the overlay  
+
+   $(this).hide();
+});
+
 document.getElementById("closecover").onclick = function() { 
   coverimage.setAttribute("src", "");
   cover.close(); 
