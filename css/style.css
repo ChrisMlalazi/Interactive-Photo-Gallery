@@ -10,15 +10,6 @@ body {
 
 }
 
-/*.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-
-
-}*/
-
-
 /*****************
 Search Field
 ******************/
@@ -113,6 +104,10 @@ padding-top: 5px;
   position: absolute;
    top: 15%;
   right: 15%;
+  font-size: 2em;
+   background-color: rgba(0,0,0,0.0);
+  color: white;
+  border: none;
 }
 
 #overlay #btnPrev {
@@ -121,6 +116,10 @@ padding-top: 5px;
    float: left;
    top: 50%;
   left: 10%;
+  font-size: 2em;
+  background-color: rgba(0,0,0,0.0);
+  color: white;
+  border: none;
 
 }
 
@@ -130,6 +129,10 @@ padding-top: 5px;
    float: right;
    top: 50%;
   right: 10%;
+  font-size: 2em;
+  background-color: rgba(0,0,0,0.0);
+  color: white;
+  border: none;
 
 }
 

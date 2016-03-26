@@ -114,7 +114,7 @@ CLOSE
 
 
 
-//3. When overlay is click
+//3. When overlay is clicked
 $overlay.click(function(event){
   //3.1 Hide the overlay  
 
