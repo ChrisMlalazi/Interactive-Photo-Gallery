@@ -109,10 +109,14 @@ $("#btnClose").click(function(){
    hideOverlay();
 });
 
+
 //When overlay is click
 $overlay.click(function(event){
+ // Hide the overlay  
 
-     hideOverlay();
+   if(event.target.id == "overlay")
+   $(this).slideUp("fast");
+   hideOverlay;
 });
 
 
@@ -124,9 +128,12 @@ $overlay.click(function(event){
 
 
 
-//3. When overlay is clicked
-$overlay.click(function(event){
-  //3.1 Hide the overlay  
+// 3. When overlay is clicked
+// $overlay.click(function(event){
+//   3.1 Hide the overlay  
 
-   $overlay.hide();
-});
+//    $overlay.hide();
+// });
+
+
+
