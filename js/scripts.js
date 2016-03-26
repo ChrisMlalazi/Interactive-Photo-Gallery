@@ -29,9 +29,7 @@ $("body").append($overlay);
 
 
 // Update image overlay
-// I moved the updating of the overlay to its own function
-// since we use it three times in three differnet area, this makes code
-// writting cleaner
+
 var updateImage = function(imageLocation, imageCaption){
 
   //1.2 update the overlay with the image linked in the link
@@ -56,7 +54,7 @@ $(".lightbox a").click(function(event){
   updateImage(imageLocation, imageCaption);
 
   //1.1 Show the overlay
-  $overlay.slideDown(imageLocation);
+  $overlay.show(imageLocation);
 
 
 });
@@ -102,7 +100,6 @@ $("#btnNext").click(function(event){
   prevNext();
 });
 
-//Exit Button
 
 // Exit button
 $("#btnClose").click(function(){

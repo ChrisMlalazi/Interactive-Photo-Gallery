@@ -136,10 +136,37 @@ padding-top: 5px;
 
 }
 
+/***************************
+Add Overlay buttons Hover
+****************************/
 
+#overlay #btnClose:hover{
+  color: green;
+}
 
+#overlay #btnNext:hover{
+  color: green;
+}
 
+#overlay #btnPrev:hover{
+  color: green;
+}
 
+/****************************
+Remove Overlay Buttons Outline
+*****************************/
+
+#overlay #btnNext:focus {
+  outline:none;
+}
+
+#overlay #btPrev:focus {
+  outline:none;
+}
+
+#overlay #btnClose:focus {
+  outline:none;
+}
 
 
 
