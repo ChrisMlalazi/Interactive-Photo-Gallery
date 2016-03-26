@@ -116,9 +116,9 @@ $overlay.click(function(event){
 });
 
 
-// // document.getElementById("closecover").onclick = function() { 
-// //   coverimage.setAttribute("src", "");
-// //   cover.close(); 
+// document.getElementById("closecover").onclick = function() { 
+//   coverimage.setAttribute("src", "");
+//   cover.close(); 
 // }
 
 
