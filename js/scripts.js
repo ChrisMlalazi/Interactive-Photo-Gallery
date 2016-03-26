@@ -5,13 +5,10 @@ var $overlay = $('<div id="overlay"><div></div></div>');
 var $image = $("<img>");
 var $caption = $("<p></p>");
 
-//Keep track of image index for prev/next, we will use a list index
-//position to determine where we are and what it means to move forward
-//and backwards by 1.
+//list index position to move forward and backwards by 1.
 var $index = 0;
 
-//this is grabbing the list items from the imageGallery element and
-//we are assigning the length total
+//Grabbing the list items from the imageGallery element and we are assigning the length total
 //this makes it flexible to expand the gallery or take away
 var $galleryLength = $(".lightbox li").length;
 
@@ -98,12 +95,6 @@ $("#btnNext").click(function(event){
   prevNext();
 });
 
-$( "#btnClose" ).click(function(event) {
-  $(this).close();
-});
-
-
-
 document.getElementById("closecover").onclick = function() { 
   coverimage.setAttribute("src", "");
   cover.close(); 
@@ -121,7 +112,5 @@ CLOSE
 $overlay.click(function(event){
   //3.1 Hide the overlay  
 
-    if(event.target.id == "overlay")
-    $(this).slideUp("fast");
-
+   $overlay.hide();
 });
