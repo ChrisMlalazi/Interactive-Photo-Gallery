@@ -107,6 +107,39 @@ padding-top: 5px;
 }
 
 
+
+
+#overlay #btnClose{
+  position: absolute;
+   top: 15%;
+  right: 15%;
+}
+
+#overlay #btnPrev {
+
+  position: absolute;
+   float: left;
+   top: 50%;
+  left: 10%;
+
+}
+
+#overlay #btnNext {
+
+  position: absolute;
+   float: right;
+   top: 50%;
+  right: 10%;
+
+}
+
+
+
+
+
+
+
+
 @media screen and (min-width: 768px){
 
 
