@@ -7,16 +7,26 @@ body {
   background-color: #f5deb3;
   margin: 0 auto; 
   text-align: center;
-
+  
 }
 
 /*****************
 Search Field
 ******************/
 
-.field {
+.field{
   background-color: white;
+  text-align:center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width:100%;
+  height: 100px;
+  border-bottom: 1px solid green;
 }
+
+
+
 
 input[type="search"] {
 	
@@ -25,7 +35,7 @@ input[type="search"] {
     height: 30px;
     font-size: 16px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-top: 30px;
     margin-bottom: 30px;
     border: solid 2px gray;
@@ -44,16 +54,15 @@ Gallery
 
 .gallery {
 	padding: 0;
-    margin-top: 40px;
-
-
+  margin-top: 150px;
+  margin-right: 40px;
 		
 }
 
 .gallery ul {
-
 	list-style: none;
-	margin-left: 20px;
+  margin: 0 auto;
+
 
 }
 
@@ -74,18 +83,17 @@ Overlay
     width: 100%;
     height: 100%;
     text-align: center;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.80);
     display: none;
+    z-index: 2;
 
   
 }
 
 #overlay img {
-  margin-top: 50%;
-  border: 2px solid white;
-  border-radius: 1%; 
-  width: 80%; 
-
+  width: 80%;
+  border: 2px solid  white;
+  margin-top: 20%;
 }
 
 #overlay p {
@@ -100,11 +108,12 @@ padding-top: 5px;
 
 
 
+
 #overlay #btnClose{
   position: absolute;
-   top: 15%;
+  top: 4%;
   right: 15%;
-  font-size: 2em;
+  font-size: 1em;
    background-color: rgba(0,0,0,0.0);
   color: white;
   border: none;
@@ -114,9 +123,9 @@ padding-top: 5px;
 
   position: absolute;
    float: left;
-   top: 50%;
-  left: 10%;
-  font-size: 2em;
+   top: 25%;
+  left: 3%;
+  font-size: 1.5em;
   background-color: rgba(0,0,0,0.0);
   color: white;
   border: none;
@@ -127,9 +136,9 @@ padding-top: 5px;
 
   position: absolute;
    float: right;
-   top: 50%;
-  right: 10%;
-  font-size: 2em;
+   top: 25%;
+  right: 3%;
+  font-size: 1.5em;
   background-color: rgba(0,0,0,0.0);
   color: white;
   border: none;
@@ -170,11 +179,74 @@ Remove Overlay Buttons Outline
 
 
 
+@media screen and (min-width: 500px) {
+
+#overlay img {
+  width: 80%;
+  border: 2px solid  white;
+  margin-top: 25%;
+}
+
+
+
+#overlay p {
+color: white;
+width: 300px;
+margin: 0 auto;
+padding-top: 5px;
+
+
+}
+
+
+
+#overlay #btnClose{
+  position: absolute;
+  top: 11%;
+  right: 10%;
+  font-size: 1.5em;
+   background-color: rgba(0,0,0,0.0);
+  color: white;
+  border: none;
+}
+
+#overlay #btnPrev {
+
+  position: absolute;
+   float: left;
+   top: 35%;
+  left: 3%;
+  font-size: 1.5em;
+  background-color: rgba(0,0,0,0.0);
+  color: white;
+  border: none;
+
+}
+
+#overlay #btnNext {
+
+  position: absolute;
+   float: right;
+   top: 35%;
+  right: 3%;
+  font-size: 1.5em;
+  background-color: rgba(0,0,0,0.0);
+  color: white;
+  border: none;
+
+}
+
+
+
+
+}
+
+
 @media screen and (min-width: 768px){
 
 
 
-	
+  
 
 
 /**************************
@@ -182,32 +254,32 @@ Gallery
 **************************/
 
 .gallery {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 .gallery ul {
 
-	max-width: 980px
-	margin: 0 auto;
+  max-width: 980px
+  margin: 0 auto;
 }
 
 
 .gallery ul li {
-	float: left;
-	width: 200px; /*(980-180) / 4 = 200*/
-	margin-left: 60px;
+  float: left;
+  width: 200px; /*(980-180) / 4 = 200*/
+  margin-left: 60px;
     
 
 }
 
 input[type="search"] {
-	
+  
  
     width: 460px;
     height: 30px;
     font-size: 16px;
    
- 	
+  
 }
 
 /*************************
@@ -223,10 +295,49 @@ padding-top: 15px;
 }
 
 #overlay img {
-  margin-top: 10%;
+  margin-top: 20%;
   border: 2px solid white;
   border-radius: 1%; 
-  width: 60%; 
+  width: 60%;
+  /*height: 450px;*/
+
+}
+
+
+
+#overlay #btnClose{
+  position: absolute;
+  top: 8%;
+  right: 18%;
+  font-size: 1.5em;
+   background-color: rgba(0,0,0,0.0);
+  color: white;
+  border: none;
+}
+
+#overlay #btnPrev {
+
+  position: absolute;
+   float: left;
+   top: 45%;
+  left: 12%;
+  font-size: 2.8em;
+  background-color: rgba(0,0,0,0.0);
+  color: white;
+  border: none;
+
+}
+
+#overlay #btnNext {
+
+  position: absolute;
+   float: right;
+   top: 45%;
+  right: 12%;
+  font-size: 2.8em;
+  background-color: rgba(0,0,0,0.0);
+  color: white;
+  border: none;
 
 }
 
@@ -234,4 +345,107 @@ padding-top: 15px;
 
 
 
+
+
+
+@media screen and (min-width: 1024px){
+
+
+
+  
+
+
+/**************************
+Gallery
+**************************/
+
+.gallery {
+  max-width: 100%;
+}
+
+.gallery ul {
+
+  max-width: 980px
+  margin: 0 auto;
+}
+
+
+.gallery ul li {
+  float: left;
+  width: 200px; /*(980-180) / 4 = 200*/
+  margin-left: 60px;
+    
+
+}
+
+input[type="search"] {
+  
+ 
+    width: 460px;
+    height: 30px;
+    font-size: 16px;
+   
+  
+}
+
+/*************************
+Overlay
+**************************/
+
+#overlay p {
+color: white;
+width: 600px;
+margin: 0 auto;
+padding-top: 15px;
+
+}
+
+#overlay img {
+  margin-top: 8%;
+  border: 2px solid white;
+  border-radius: 1%; 
+  width: 60%;
+  /*height: 450px;*/
+
+}
+
+
+
+#overlay #btnClose{
+  position: absolute;
+  top: 8%;
+  right: 18%;
+  font-size: 1.5em;
+   background-color: rgba(0,0,0,0.0);
+  color: white;
+  border: none;
+}
+
+#overlay #btnPrev {
+
+  position: absolute;
+   float: left;
+   top: 40%;
+  left: 12%;
+  font-size: 2.8em;
+  background-color: rgba(0,0,0,0.0);
+  color: white;
+  border: none;
+
+}
+
+#overlay #btnNext {
+
+  position: absolute;
+   float: right;
+   top: 40%;
+  right: 12%;
+  font-size: 2.8em;
+  background-color: rgba(0,0,0,0.0);
+  color: white;
+  border: none;
+
+}
+
+}
 
