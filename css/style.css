@@ -28,7 +28,7 @@ Search Field
 
 
 
-input[type="search"] {
+input[type="text"] {
 	
   
     width: 200px;
@@ -277,7 +277,7 @@ Gallery
 
 }
 
-input[type="search"] {
+input[type="text"] {
   
  
     width: 460px;
@@ -383,7 +383,7 @@ Gallery
 
 }
 
-input[type="search"] {
+input[type="text"] {
   
  
     width: 460px;

@@ -1,65 +1,34 @@
-(function ($) {
 
-  jQuery.expr[':'].Contains = function(a,i,m){
+ (function() {                             // Lives in an IIFE
+  var $imgs = $('.lightbox img');          // Get the images
+  var $search = $('#search');      // Get the input element
+  var cache = [];                         // Create an array called cache
 
-      return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
-
-  };
-
- 
-
-  //live search function
-
-  function live_search(list) {
-
-    $("#search")
-
-      .change( function () {
-
-        //getting search value
-
-        var searchtext = $(this).val();
-
-        if(searchtext) {
-
-          //finding If content matches with search keyword
-
-          $matches = $(list).find('a:Contains(' + searchtext + ')').parent();
-
-          //hiding non matching lists
-          $("li", list).not($matches).slideUp();
-
-          //showing matching lists
-
-          $matches.slideDown();
-
- 
-
-        } else {
-
-          //if search keyword is empty then display all the lists
-
-          $(list).find("li").slideDown(200);
-
-        }
-
-        return false;
-
-      })
-
-    .keyup( function () {
-
-        $(this).change();
-
+  $imgs.each(function() {                 // For each image
+    cache.push({                          // Add an object to the cache array
+      element: this,                      // This image
+      text: this.alt.trim().toLowerCase() // Its alt text (lowercase trimmed)
     });
-
-  }
-
- 
-  $(function () {
-
-    live_search($(".lightbox"));
-
   });
 
-}(jQuery));
+  function filter() {                     // Declare filter() function
+    var query = this.value.trim().toLowerCase();  // Get the query
+    cache.forEach(function(img) {         // For each entry in cache pass image 
+      var index = 0;                      // Set index to 0
+
+      if (query) {                        // If there is some query text
+        index = img.text.indexOf(query);  // Find if query text is in there
+      }
+
+      img.element.style.display = index === -1 ? 'none' : '';  // Show / hide
+    });
+  }
+
+  if ('oninput' in $search[0]) {          // If browser supports input event
+    $search.on('input', filter);          // Use input event to call filter()
+  } else {                                // Otherwise
+    $search.on('keyup', filter);          // Use keyup event to call filter()
+  }              
+
+}());
+
