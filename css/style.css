@@ -46,6 +46,11 @@ input[type="search"] {
   outline:none;
 }
 
+.hidden {
+    opacity: 0.4;
+    transition: opacity .25s ease-in-out;
+    pointer-events: none;
+}
 
 
 /****************
