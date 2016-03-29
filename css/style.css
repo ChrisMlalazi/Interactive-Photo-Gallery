@@ -35,15 +35,31 @@ input[type="text"] {
     height: 30px;
     font-size: 16px;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 4px;
     margin-top: 30px;
     margin-bottom: 30px;
-    border: solid 2px gray;
+   
  	
 }
 
- input:focus {
-  outline:none;
+input {
+
+   border: solid 3px;
+   border-color: grey;
+   transition: border-color .6s;
+   transition-property: border-color, background-color, border-radius;
+
+}
+
+ input:hover {
+  border-color: green;
+  background-color: #f5deb3;
+  border-radius: 20px;
+
+ }
+
+input:focus {
+  outline: none;
 }
 
 .hidden {
@@ -76,6 +92,22 @@ Gallery
 	 margin-bottom: 20px;
 
 }
+
+ img {
+  border: 1px solid white;
+  transition-property: box-shadow;
+  transition-duration:  .4s;
+  
+
+}
+
+img:hover {
+  
+  box-shadow: 0 0 15px rgba(0,0, 0, 5);
+ 
+
+}
+
 
 /***********************
 Overlay
@@ -261,6 +293,7 @@ Gallery
 .gallery {
   max-width: 100%;
 }
+
 
 .gallery ul {
 
