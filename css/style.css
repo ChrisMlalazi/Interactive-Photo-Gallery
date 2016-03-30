@@ -4,8 +4,10 @@
 
 body {
   font-family: 'Nunito', sans-serif;
-  background: linear-gradient(#00bfff, transparent  30%),
-                     white;
+/*  background: linear-gradient(#00bfff, transparent  10%),
+*/                     
+  background-color: #f5deb3;
+  background-repeat: no-repeat;
   margin: 0 auto; 
   text-align: center;
   
