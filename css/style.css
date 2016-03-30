@@ -4,7 +4,8 @@
 
 body {
   font-family: 'Nunito', sans-serif;
-  background-color: #f5deb3;
+  background: linear-gradient(#00bfff, transparent  30%),
+                     white;
   margin: 0 auto; 
   text-align: center;
   
@@ -38,7 +39,6 @@ input[type="text"] {
     border-radius: 4px;
     margin-top: 30px;
     margin-bottom: 30px;
-   
  	
 }
 
@@ -142,7 +142,23 @@ padding-top: 5px;
 
 }
 
+/********************
+FOOTER
+********************/
 
+.copy{
+  clear: both;
+  font-weight: bold;
+  color: black;
+  font-size: .8em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: orange;
+}
 
 
 
@@ -164,7 +180,7 @@ padding-top: 5px;
   left: 3%;
   font-size: 1.5em;
   background-color: rgba(0,0,0,0.0);
-  color: white;
+  color: grey;
   border: none;
 
 }
@@ -182,20 +198,30 @@ padding-top: 5px;
 
 }
 
+
+
+
+
+
+
+
+
+
+
 /***************************
 Add Overlay buttons Hover
 ****************************/
 
 #overlay #btnClose:hover{
-  color: green;
+  color: white;
 }
 
 #overlay #btnNext:hover{
-  color: green;
+  color: white;
 }
 
 #overlay #btnPrev:hover{
-  color: green;
+  color: white;
 }
 
 /****************************
@@ -242,8 +268,8 @@ padding-top: 5px;
   top: 11%;
   right: 10%;
   font-size: 1.5em;
-   background-color: rgba(0,0,0,0.0);
-  color: white;
+ /*  background-color: rgba(0,0,0,0.0);*/
+  color: grey;
   border: none;
 }
 
@@ -254,8 +280,8 @@ padding-top: 5px;
    top: 35%;
   left: 3%;
   font-size: 1.5em;
-  background-color: rgba(0,0,0,0.0);
-  color: white;
+/*  background-color: rgba(0,0,0,0.0);*/
+  color: grey;
   border: none;
 
 }
@@ -267,8 +293,8 @@ padding-top: 5px;
    top: 35%;
   right: 3%;
   font-size: 1.5em;
-  background-color: rgba(0,0,0,0.0);
-  color: white;
+/*  background-color: rgba(0,0,0,0.0);*/
+  color: grey;
   border: none;
 
 }
@@ -348,8 +374,8 @@ padding-top: 15px;
   top: 8%;
   right: 18%;
   font-size: 1.5em;
-   background-color: rgba(0,0,0,0.0);
-  color: white;
+/*   background-color: rgba(0,0,0,0.0);*/
+  color: grey;
   border: none;
 }
 
@@ -361,7 +387,7 @@ padding-top: 15px;
   left: 12%;
   font-size: 2.8em;
   background-color: rgba(0,0,0,0.0);
-  color: white;
+  color: grey;
   border: none;
 
 }
@@ -373,8 +399,8 @@ padding-top: 15px;
    top: 45%;
   right: 12%;
   font-size: 2.8em;
-  background-color: rgba(0,0,0,0.0);
-  color: white;
+ /* background-color: rgba(0,0,0,0.0);*/
+  color: grey;
   border: none;
 
 }
@@ -454,8 +480,8 @@ padding-top: 15px;
   top: 8%;
   right: 18%;
   font-size: 1.5em;
-   background-color: rgba(0,0,0,0.0);
-  color: white;
+/*   background-color: rgba(0,0,0,0.0);*/
+  color: grey;
   border: none;
 }
 
@@ -466,8 +492,8 @@ padding-top: 15px;
    top: 40%;
   left: 12%;
   font-size: 2.8em;
-  background-color: rgba(0,0,0,0.0);
-  color: white;
+  /*background-color: rgba(0,0,0,0.0);*/
+  color: grey;
   border: none;
 
 }
@@ -479,8 +505,8 @@ padding-top: 15px;
    top: 40%;
   right: 12%;
   font-size: 2.8em;
-  background-color: rgba(0,0,0,0.0);
-  color: white;
+/*  background-color: rgba(0,0,0,0.0);*/
+  color: grey;
   border: none;
 
 }
