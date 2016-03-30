@@ -6,7 +6,7 @@ body {
   font-family: 'Nunito', sans-serif;
 /*  background: linear-gradient(#00bfff, transparent  10%),
 */                     
-  background-color: #f5deb3;
+  background-color: #add8e6;
   background-repeat: no-repeat;
   margin: 0 auto; 
   text-align: center;
@@ -55,7 +55,7 @@ input {
 
  input:hover {
   border-color: green;
-  background-color: #f5deb3;
+  background-color: #add8e6;
   border-radius: 20px;
 
  }
@@ -110,6 +110,67 @@ img:hover {
 
 }
 
+/*.searching {
+  float: left;
+}*/
+
+.social {
+  float: right;
+  display: inline-block;
+  margin-right: 5px;
+
+
+}
+
+
+
+/**********************************
+SOCIAL
+***********************************/
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  opacity: .8;
+  transition: all .5s;
+  float: left;
+
+}
+
+ul {
+  list-style: none;
+
+}
+
+.social li {
+  display: inline-block;
+  position: relative;
+  bottom: 71px;
+}
+
+.social a {
+  text-decoration: none;
+
+}
+
+a.twitter {
+  background-image: url(../imgs/twitter.svg);
+}
+a.linkedin {
+  background-image: url(../imgs/linkedin.svg);
+}
+a.github {
+  background-image: url(../imgs/github.svg);
+}
+a.social:hover {
+  opacity: 1;
+}
+
 
 /***********************
 Overlay
@@ -157,7 +218,7 @@ FOOTER
   margin-bottom: 30px;
 }
 
-a {
+.copy a {
   text-decoration: none;
   color: orange;
 }
