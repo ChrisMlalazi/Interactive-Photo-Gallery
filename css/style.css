@@ -132,9 +132,9 @@ a.social {
   display: inline-block;
   text-indent: -9999px;
   margin-left: 5px;
-  margin-right: 10px;
-  width: 25px;
-  height: 25px;
+  margin-right: 0;
+  width: 20px;
+  height: 20px;
   background-repeat: no-repeat;
   opacity: .8;
   transition: all .5s;
@@ -168,7 +168,7 @@ a.github {
   background-image: url(../imgs/github.svg);
 }
 a.social:hover {
-  opacity: 1;
+  opacity: .5;
 }
 
 
@@ -315,6 +315,9 @@ Remove Overlay Buttons Outline
 
 
 
+
+
+
 #overlay p {
 color: white;
 width: 300px;
@@ -368,7 +371,7 @@ padding-top: 5px;
 }
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 745px){
 
 
 
@@ -465,6 +468,49 @@ padding-top: 15px;
  /* background-color: rgba(0,0,0,0.0);*/
   color: grey;
   border: none;
+
+}
+
+/**********************************
+SOCIAL
+***********************************/
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  opacity: .5;
+  transition: all .3s;
+  float: left;
+
+}
+
+a.social:hover {
+  opacity: 1;
+}
+
+ul {
+  list-style: none;
+
+}
+
+.move {
+ margin-right: 20px;
+
+}
+
+.social li {
+  display: inline-block;
+  position: relative;
+  bottom: 71px;
+}
+
+.social a {
+  text-decoration: none;
 
 }
 
