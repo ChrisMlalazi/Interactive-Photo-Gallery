@@ -2,15 +2,19 @@
   box-sizing: border-box;
 }
 
+
 body {
-  font-family: 'Nunito', sans-serif;
-/*  background: linear-gradient(#00bfff, transparent  10%),
-*/                     
+  font-family: 'Nunito', sans-serif;                    
   background-color: #add8e6;
   background-repeat: no-repeat;
   margin: 0 auto; 
   text-align: center;
   
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 980px;
 }
 
 /*****************
@@ -64,55 +68,62 @@ input:focus {
   outline: none;
 }
 
-.hidden {
-    opacity: 0.4;
-    transition: opacity .25s ease-in-out;
-    pointer-events: none;
-}
+
 
 
 /****************
 Gallery
 ******************/
 
+.container {
+  margin-top: 150px;
+  
+}
+
 .gallery {
 	padding: 0;
-  margin-top: 150px;
-  margin-right: 40px;
+  
+  text-align: center;
+  margin-left: 50px;
+ 
 		
 }
 
 .gallery ul {
 	list-style: none;
   margin: 0 auto;
-
-
-}
-
-.gallery li {
-	margin: 0 auto;
-	 margin-bottom: 20px;
-
-}
-
- img {
-  border: 1px solid white;
-  transition-property: box-shadow;
-  transition-duration:  .4s;
-  
-
-}
-
-img:hover {
-  
-  box-shadow: 0 0 15px rgba(0,0, 0, 5);
  
 
 }
 
-/*.searching {
+
+ .gallery img {
+  border: 1px solid white;
+  transition-property: box-shadow;
+  transition-duration:  .4s;
+
+
+}
+
+.gallery ul li {
   float: left;
-}*/
+   margin-bottom: 30px;
+    
+
+}
+
+.gallery li:nth-child(1n) {
+        margin-right: 30px;
+    }
+
+
+img:hover {
+  
+  box-shadow: 0 0 15px rgba(0,0, 0, .7);
+ 
+
+}
+
 
 .social {
   float: right;
@@ -263,14 +274,6 @@ FOOTER
 
 
 
-
-
-
-
-
-
-
-
 /***************************
 Add Overlay buttons Hover
 ****************************/
@@ -307,15 +310,20 @@ Remove Overlay Buttons Outline
 
 @media screen and (min-width: 500px) {
 
+  .gallery {
+  padding: 0;
+  margin-top: 150px;
+  text-align: center;
+  margin-left: 0;
+ 
+    
+}
+
 #overlay img {
   width: 80%;
   border: 2px solid  white;
   margin-top: 25%;
 }
-
-
-
-
 
 
 #overlay p {
@@ -328,13 +336,12 @@ padding-top: 5px;
 }
 
 
-
 #overlay #btnClose{
   position: absolute;
   top: 11%;
   right: 10%;
   font-size: 1.5em;
- /*  background-color: rgba(0,0,0,0.0);*/
+  background-color: rgba(0,0,0,0.0);
   color: grey;
   border: none;
 }
@@ -346,7 +353,6 @@ padding-top: 5px;
    top: 35%;
   left: 3%;
   font-size: 1.5em;
-/*  background-color: rgba(0,0,0,0.0);*/
   color: grey;
   border: none;
 
@@ -359,23 +365,14 @@ padding-top: 5px;
    top: 35%;
   right: 3%;
   font-size: 1.5em;
-/*  background-color: rgba(0,0,0,0.0);*/
   color: grey;
   border: none;
 
 }
 
-
-
-
 }
 
-
 @media screen and (min-width: 745px){
-
-
-
-  
 
 
 /**************************
@@ -383,21 +380,17 @@ Gallery
 **************************/
 
 .gallery {
-  max-width: 100%;
-}
 
-
-.gallery ul {
-
-  max-width: 980px
+  max-width: 980px;
   margin: 0 auto;
 }
 
 
-.gallery ul li {
+
+.gallery li img {
   float: left;
-  width: 200px; /*(980-180) / 4 = 200*/
-  margin-left: 60px;
+  width: 100%; 
+
     
 
 }
@@ -429,7 +422,7 @@ padding-top: 15px;
   border: 2px solid white;
   border-radius: 1%; 
   width: 60%;
-  /*height: 450px;*/
+ 
 
 }
 
@@ -465,105 +458,10 @@ padding-top: 15px;
    top: 45%;
   right: 12%;
   font-size: 2.8em;
- /* background-color: rgba(0,0,0,0.0);*/
   color: grey;
   border: none;
 
 }
-
-/**********************************
-SOCIAL
-***********************************/
-
-a.social {
-  display: inline-block;
-  text-indent: -9999px;
-  margin-left: 5px;
-  margin-right: 5px;
-  width: 25px;
-  height: 25px;
-  background-repeat: no-repeat;
-  opacity: .5;
-  transition: all .3s;
-  float: left;
-
-}
-
-a.social:hover {
-  opacity: 1;
-}
-
-ul {
-  list-style: none;
-
-}
-
-.move {
- margin-right: 20px;
-
-}
-
-.social li {
-  display: inline-block;
-  position: relative;
-  bottom: 71px;
-}
-
-.social a {
-  text-decoration: none;
-
-}
-
-}
-
-
-
-
-
-
-@media screen and (min-width: 1024px){
-
-
-
-  
-
-
-/**************************
-Gallery
-**************************/
-
-.gallery {
-  max-width: 100%;
-}
-
-.gallery ul {
-
-  max-width: 980px
-  margin: 0 auto;
-}
-
-
-.gallery ul li {
-  float: left;
-  width: 200px; /*(980-180) / 4 = 200*/
-  margin-left: 60px;
-    
-
-}
-
-input[type="text"] {
-  
- 
-    width: 460px;
-    height: 30px;
-    font-size: 16px;
-   
-  
-}
-
-/*************************
-Overlay
-**************************/
 
 #overlay p {
 color: white;
@@ -578,47 +476,10 @@ padding-top: 15px;
   border: 2px solid white;
   border-radius: 1%; 
   width: 60%;
-  /*height: 450px;*/
+
 
 }
 
-
-
-#overlay #btnClose{
-  position: absolute;
-  top: 8%;
-  right: 18%;
-  font-size: 1.5em;
-/*   background-color: rgba(0,0,0,0.0);*/
-  color: grey;
-  border: none;
-}
-
-#overlay #btnPrev {
-
-  position: absolute;
-   float: left;
-   top: 40%;
-  left: 12%;
-  font-size: 2.8em;
-  /*background-color: rgba(0,0,0,0.0);*/
-  color: grey;
-  border: none;
-
-}
-
-#overlay #btnNext {
-
-  position: absolute;
-   float: right;
-   top: 40%;
-  right: 12%;
-  font-size: 2.8em;
-/*  background-color: rgba(0,0,0,0.0);*/
-  color: grey;
-  border: none;
-
-}
 
 }
 
