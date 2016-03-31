@@ -117,20 +117,6 @@ $overlay.click(function(event){
 });
 
 
-// document.getElementById("closecover").onclick = function() { 
-//   coverimage.setAttribute("src", "");
-//   cover.close(); 
-// }
-
-
-
-
-// 3. When overlay is clicked
-// $overlay.click(function(event){
-//   3.1 Hide the overlay  
-
-//    $overlay.hide();
-// });
 
 
 
