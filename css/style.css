@@ -465,7 +465,7 @@ padding-top: 15px;
 
   position: absolute;
    float: white;
-   top: 50%;
+   top: 45%;
   left: 20%;
   font-size: 1.5em;
   background-color: rgba(0,0,0,0.0);
@@ -478,7 +478,7 @@ padding-top: 15px;
 
   position: absolute;
   float: right;
-  top: 50%;
+  top: 45%;
   right: 20%;
   font-size: 1.5em;
   background-color: rgba(0,0,0,0.0);
