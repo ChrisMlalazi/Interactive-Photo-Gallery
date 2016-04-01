@@ -148,6 +148,11 @@ ul {
   bottom: 40px;
 }
 
+
+.social li:hover {
+  transform: rotate(-40deg);
+}
+
 .social a {
   text-decoration: none;
 
