@@ -90,7 +90,7 @@ function hideOverlay() {
 }
 
 
-//Button events
+//Button events - CLICK
 
 $("#btnPrev").click(function(event){
   prevNext(true);
@@ -99,6 +99,19 @@ $("#btnPrev").click(function(event){
 $("#btnNext").click(function(event){
   prevNext();
 });
+
+
+// Button events - KEYBOARD NAV
+
+$("#btnPrev").keydown(function(event){
+  prevNext(true);
+});
+
+$("#btnNext").keydown(function(event){
+  prevNext();
+
+});
+
 
 
 // Exit button
@@ -156,6 +169,23 @@ SEARCH FILTER
 }());
 
 
+/*****************************
+KEYBOARD NAVIGATION
+*****************************/
+
+
+$("#overlay img").keydown(function (e){ 
+    if(e.keyCode == 37) // left arrow
+    {
+        // your action here, for example
+        $('#btnPrev').keydown();
+    }
+    else if(e.keyCode == 39)    // right arrow
+    { 
+        // your action here, for example
+        $('#btnNext').keydown();
+    }
+});
 
 
 
