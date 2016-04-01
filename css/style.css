@@ -406,7 +406,7 @@ padding-top: 15px;
 #overlay #btnPrev {
 
   position: absolute;
-   float: white;
+   float: left;
    top: 40%;
   left: 10%;
   font-size: 1.5em;
@@ -465,7 +465,7 @@ padding-top: 15px;
 #overlay #btnPrev {
 
   position: absolute;
-  float: white;
+  float: left;
   top: 45%;
   left: 20%;
   font-size: 1.5em;
