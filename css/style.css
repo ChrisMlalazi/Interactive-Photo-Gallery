@@ -85,6 +85,16 @@ Gallery
 
 }
 
+img {
+    transition: transform .5s;
+}
+
+img:hover {
+transform:skewX(1deg);
+
+}
+
+
 
  .lightbox img {
    max-width: 100%;
