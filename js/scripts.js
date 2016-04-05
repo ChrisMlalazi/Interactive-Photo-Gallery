@@ -100,20 +100,6 @@ $("#btnNext").click(function(event){
   prevNext();
 });
 
-
-// Button events - KEYBOARD NAV
-
-$("#btnPrev").keydown(function(event){
-  prevNext(true);
-});
-
-$("#btnNext").keydown(function(event){
-  prevNext();
-
-});
-
-
-
 // Exit button
 $("#btnClose").click(function(){
    hideOverlay();
@@ -174,17 +160,18 @@ KEYBOARD NAVIGATION
 *****************************/
 
 
-$("#overlay img").keydown(function (e){ 
-    if(e.keyCode == 37) // left arrow
-    {
-        // your action here, for example
-        $('#btnPrev').keydown();
+$(window).bind('keydown', function(e){
+    if (e.keyCode == 37) {
+         $('#btnPrev').click();
+
+    } else if (e.keyCode == 39) {
+         $('#btnNext').click();
+
+    } else if (e.keyCode == 27) {
+         $('#btnClose').click();
+
     }
-    else if(e.keyCode == 39)    // right arrow
-    { 
-        // your action here, for example
-        $('#btnNext').keydown();
-    }
+
 });
 
 
