@@ -175,4 +175,14 @@ $(window).bind('keydown', function(e){
 });
 
 
+/***************************
+IFRAME
+*****************************/
+var player = document.getElementById('video');
+$('#vid').click(function(){
+    $('#video').css('visibility','visible').animate({
+        opacity: 1
+    }, 2000);
+player.playVideo();
+});
 
