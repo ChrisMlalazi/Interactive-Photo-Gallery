@@ -1,9 +1,11 @@
+
 //Problem: User when clicking on image goes to a dead end
 //Solution Create an overlay with the large image - Lightbox
 
 var $overlay = $('<div id="overlay"><div></div></div>');
 var $image = $("<img>");
 var $caption = $("<p></p>");
+
 
 //list index position to move forward and backwards by 1.
 var $index = 0;
@@ -24,6 +26,10 @@ $overlay.children("div").append("<button id='btnPrev'> < </button>");
 $overlay.children("div").append("<button id='btnNext'> > </button>");
 $overlay.children("div").append("<button id='btnClose'> X </button>");
 
+//add video
+
+// $overlay.children("div").append("<iframe width='540' height='360' src='https://www.youtube.com/embed/TP8_GAer9jI' frameborder='0' allowfullscreen id='video'></iframe>");
+
 //2. Add overlay
 $("body").append($overlay);
 
@@ -39,7 +45,7 @@ var updateImage = function(imageLocation, imageCaption){
   $caption.text(imageCaption);
 
 
-}
+};
 
 //1. Click <a> event to an image
 $(".lightbox a").click(function(event){
@@ -81,7 +87,7 @@ var prevNext = function(prev ) {
 
   //Update Overlay
   updateImage(imageLocation, imageCaption);
-}
+};
 
 
 // Hide Overlay function
@@ -136,7 +142,7 @@ SEARCH FILTER
   function filter() {                     // Declare filter() function
     var query = this.value.trim().toLowerCase();  // Get the query
     cache.forEach(function(img) {         // For each entry in cache pass image 
-      var index = 0;                      // Set index to 0
+      var index = 1;                      // Set index to 0
 
       if (query) {                        // If there is some query text
         index = img.text.indexOf(query);  // Find if query text is in there
@@ -173,10 +179,3 @@ $(window).bind('keydown', function(e){
     }
 
 });
-
-
-/***************************
-IFRAME
-*****************************/
- 
-
