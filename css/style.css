@@ -12,7 +12,23 @@ body {
   
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 
+
+}
+
+.top {
+  font-size: .6em;
+  font-weight: bold;
+  color: black;
+}
+
+.topper {
+  background-color: red;
+}
 
 /*****************
 Search Field
