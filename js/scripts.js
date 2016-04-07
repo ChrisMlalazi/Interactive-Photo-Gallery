@@ -18,17 +18,14 @@ var $galleryLength = $(".lightbox li").length;
 $overlay.children("div").append($image);
 
 
+// Add some nav buttons and assign unique ids to them!
+$overlay.children("div").append("<button id='btnPrev'> < </button>");
+$overlay.children("div").append("<button id='btnClose'> X </button>");
+$overlay.children("div").append("<button id='btnNext'> > </button>");
+
 //2.2 add caption
 $overlay.children("div").append($caption);
 
-// Add some nav buttons and assign unique ids to them!
-$overlay.children("div").append("<button id='btnPrev'> < </button>");
-$overlay.children("div").append("<button id='btnNext'> > </button>");
-$overlay.children("div").append("<button id='btnClose'> X </button>");
-
-//add video
-
-// $overlay.children("div").append("<iframe width='540' height='360' src='https://www.youtube.com/embed/TP8_GAer9jI' frameborder='0' allowfullscreen id='video'></iframe>");
 
 //2. Add overlay
 $("body").append($overlay);
