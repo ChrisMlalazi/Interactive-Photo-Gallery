@@ -73,7 +73,7 @@ var prevNext = function(prev ) {
 
   //if out of index reset
   if ($index < 0) { $index = $galleryLength-1;}
-  if ($index > 11) { $index = 0; }
+  if ($index > 8) { $index = 0; }
 
   //Grab the element by index and then get the link
   var newImgSelected = $(".lightbox li").get($index).getElementsByTagName("a");
@@ -109,7 +109,7 @@ $("#btnClose").click(function(){
 });
 
 
-//When overlay is clicked
+//When overlay is click
 $overlay.click(function(event){
  // Hide the overlay  
 
@@ -117,45 +117,6 @@ $overlay.click(function(event){
    $(this).slideUp("fast");
    hideOverlay;
 });
-
-
-/***************************
-SEARCH FILTER
-****************************/
-
-
- (function() {                             // Lives in an IIFE
-  var $imgs = $('.lightbox img');          // Get the images
-  var $search = $('#search');      // Get the input element
-  var cache = [];                         // Create an array called cache
-
-  $imgs.each(function() {                 // For each image
-    cache.push({                          // Add an object to the cache array
-      element: this,                      // This image
-      text: this.alt.trim().toLowerCase() // Its alt text (lowercase trimmed)
-    });
-  });
-
-  function filter() {                     // Declare filter() function
-    var query = this.value.trim().toLowerCase();  // Get the query
-    cache.forEach(function(img) {         // For each entry in cache pass image 
-      var index = 1;                      // Set index to 0
-
-      if (query) {                        // If there is some query text
-        index = img.text.indexOf(query);  // Find if query text is in there
-      }
-
-      img.element.style.display = index === -1 ? 'none' : '';  // Show / hide
-    });
-  }
-
-  if ('oninput' in $search[0]) {          // If browser supports input event
-    $search.on('input', filter);          // Use input event to call filter()
-  } else {                                // Otherwise
-    $search.on('keyup', filter);          // Use keyup event to call filter()
-  }              
-
-}());
 
 
 /*****************************

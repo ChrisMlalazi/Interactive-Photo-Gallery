@@ -1,0 +1,943 @@
+/*****************
+BODY
+*****************/
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Open Sans", sans-serif; 
+    background-color: gray;;
+    width: 100%;
+    max-width: 1400px;
+    height: auto;    
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+} 
+
+
+/*************************
+ HOME-NAVIGATOION
+ 
+ *************************/
+
+.menu {
+  float: right;
+  margin-right: 40px;
+  font-weight: bold;
+  margin-top: 80px;
+  padding: 0;
+
+
+} 
+
+.nav{
+ border: 0 auto;
+
+}
+
+
+
+}
+
+.menu li {
+  margin-top: 25px;
+   display: block;
+   padding:0;
+
+  
+}
+
+.menu  a {
+  text-decoration: none;
+  margin-top: 30;
+ 
+}
+
+  a {
+     color: white;
+} 
+
+
+  menu a:hover {
+    color: brown;
+  }
+
+  a:hover {
+     color: orange;
+}
+
+/****************************
+Hamburger Menu
+******************************/
+
+.ham {
+  margin-top: 2px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html, body {
+  height: 100%;
+}
+
+
+
+ul {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+ 
+}
+
+nav {
+ 
+  background-color: #f5f5f5;
+}
+
+ul a {
+  display: block;
+  padding: 10px;
+  padding-right: 0 !important; /* important overrides media queries */
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+/*  color: #aaa;*/
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+nav li:last-child {
+  border-right: none;
+}
+
+
+
+
+/****************************
+End ofHamburger Menu
+******************************/
+
+ 
+/********************
+Home
+**********************/
+
+.quotation {
+    font-family: 'kalam', sans-serif; /*Exceprt*/
+  }
+
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0; 
+
+}
+
+.container {  
+    background-image: url("../img/NewCharlie2.jpg");
+    background-repeat:  no-repeat;   
+    height: calc(100vh - 50px);
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    border-bottom: 2px solid orange;
+    border-top: 2px solid orange;
+    margin-top: 0;             
+}
+
+#brand{
+    margin-top: 45px;
+    font-weight: bold;
+    color: #4b0082;
+    font-size: 2em;
+    font-family: 'Changa One', sans-serif; 
+    font-weight: normal;
+    text-shadow: 5px 8px 8px grey;
+    float: right;
+    position: relative;
+    left: 100px;
+    bottom: 88px;
+  
+}
+
+
+/*************************
+ HOME-FOOTER
+**************************/
+
+.futer a {
+text-decoration: none;
+color: #4b0082;
+font-weight: bold;
+
+}
+
+.futer {
+  background: #f0f8ff;
+  height: 50px;
+}
+
+.futer p {
+  padding-top: 15px;
+  font-size: .7em;
+  display: inline-block;
+  font-weight: bold;
+  color: #4b0082;
+
+}
+
+.left {
+  float: left;
+  margin-left: 20px;
+}
+
+.right {
+  float: right;
+  margin-right: 20px;
+}
+
+h2 {
+
+  color: #000000;
+}
+
+.futer {
+   flex: 1;
+}
+
+
+
+
+
+/*********************************
+ABOUT PAGE - TO USE BOX SHADOW FILTER EFFECT ON MAIN IMAGE
+
+**********************************/
+#aboutsection {
+      
+   background-image: url("../img/aboutbackground.png");
+    border-bottom: 20px solid #4b0082;
+     
+}
+
+
+
+.artgallery img {
+  width: 50%;
+  display: block;
+  margin: auto;
+  border-radius: 30px;
+   margin-top: 50px;
+}
+
+.artgallery {
+  height: 100%;
+  margin-top: 81px;
+  padding: 20px;
+  margin-bottom: 0;
+  overflow: hidden;
+
+}
+
+}
+.span {
+  background-color: black;
+}
+
+.span p {
+
+ text-align: center;
+  background-color: black;
+
+}
+
+/***********************
+MULTI COLUMN
+************************/
+
+
+.bio:first-line {
+  font-weight: bold; 
+  font-size: 1em;
+} 
+
+.bio::first-letter {
+  float:left;
+  font-size: 1em;
+  color: orange;
+  padding:5px 10px;
+  background: #384047;
+  margin: 5px 10px 0 0;
+  border-radius:5px;
+  line-height: 1;
+  
+}
+
+.bio {
+  
+  margin-top: 0;
+  
+  height: auto;
+
+}
+
+.bio p {
+
+ /* -webkit-column-count: 2;*/
+  margin-left: 50px;
+  margin-right: 20px;
+  font: 1em Tangerine;
+ /* -webkit-column-rule: 1px dotted;
+  -webkit-column-width: 250px;*/
+}
+
+.bio p {
+ /* -moz-column-count: 2;*/
+  margin-left: 50px;
+  margin-right: 20px;
+  font: 1em Tangerine;
+ /* -moz-column-rule: 1px dotted;
+  -moz-column-width: 250px;*/
+}
+
+/***************************************
+GALLERY
+****************************************/
+
+.background {
+  border-bottom: 20px solid #4b0082;
+  height: auto;
+  
+  }
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.background {
+  background-color: #add8e6;
+}
+
+
+.galleryTitle{
+  color: #4b0082;
+  text-align: center;
+  position: relative;
+  bottom: 45px;
+/*  margin-top: -10px;*/
+  overflow: hidden;
+}
+
+
+.interactive {
+  color: black;
+  font-size: .8em;
+  text-align: center;
+  margin-top: -40px;
+  margin-bottom: 10px;
+
+}
+
+.inter{
+  color: black;
+  font-size: .8em;
+  text-align: center;
+  margin-bottom: -30px;
+}
+
+
+.field{
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width:100%;
+/*  height: px;*/
+}
+
+.nav3 {
+  background-color: #f0f8ff;
+  height: 80px;
+  
+}
+
+
+
+.nature {
+  margin-left: 40px;
+  color: #696969;
+  font-family: 'kalam', sans-serif; 
+}
+
+.gallery {
+  max-width: 100%;
+  margin-top: 140px;
+}
+
+
+img:hover {
+transform:skewY(1.5deg);
+
+}
+
+.lightbox  {
+  list-style: none;
+  max-width: 980px;
+  padding: 10px;
+  margin: 10px auto;
+
+  
+}
+
+ .lightbox img {
+    transition: transform .5s;
+    width: 70%;
+    height: 70%;
+    border: 3px solid white;
+    transition-property: box-shadow;
+    transition-duration:  .4s;
+    margin-bottom: 20px;
+    margin: 20px;
+
+    
+
+ }
+
+ .lightbox li {
+    margin-top: 50px;
+   /* width: 70%;
+    height: 70%;*/
+      border-radius: 10px;
+    background-color: rgba(0,0,0,0.1);     
+}
+  
+
+img:hover {
+  
+  box-shadow: 0 0 15px rgba(0,0, 0, .7);
+ 
+
+}
+
+
+
+/**********************************
+SOCIAL MEDIA ICONS
+***********************************/
+
+.social {
+  padding: 0;
+}
+
+a.social {
+    display: inline-block;
+    text-indent: -9999px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    opacity: .8;
+    transition: all .5s;
+    text-decoration: none;
+    padding: 11px;
+
+  }
+
+ul {
+  list-style: none;
+
+}
+
+.social li {
+  display: inline-block;
+  position: relative;
+  bottom: 35px;
+  padding: 10px;
+
+}
+
+
+.social li:hover {
+  transform: rotate(-40deg);
+
+}
+
+a.twitter {
+  background-image: url(../imgs/twitter.svg);
+}
+a.linkedin {
+  background-image: url(../imgs/linkedin.svg);
+}
+a.github {
+  background-image: url(../imgs/github.svg);
+}
+a.social:hover {
+  opacity: .5;
+}
+
+
+
+
+
+/********************
+FOOTER
+********************/
+
+
+
+
+
+/***********************
+Overlay
+************************/
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: rgba(0,0,0,0.80);
+    display: none;
+    z-index: 2;
+  
+}
+
+
+#overlay img {
+  max-height: 50vh;
+  max-width: 80%;
+  border: 2px solid  white;
+  margin-top: 20%;
+}
+
+#overlay p {
+color: white;
+width: 300px;
+margin: 0 auto;
+padding-top: 5px;
+
+}
+
+
+#overlay #btnClose{
+  position: absolute;
+  top: 4%;
+  right: 15%;
+  font-size: 1em;
+   background-color: rgba(0,0,0,0.0);
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+#overlay #btnPrev {
+
+  position: absolute;
+   float: left;
+   top: 25%;
+  left: 3%;
+  font-size: 1.5em;
+  background-color: rgba(0,0,0,0.0);
+  color: white;
+  border: none;
+  font-weight: bold;
+
+}
+
+#overlay #btnNext {
+
+  position: absolute;
+   float: right;
+   top: 25%;
+  right: 3%;
+  font-size: 1.5em;
+  background-color: rgba(0,0,0,0.0);
+  color: white;
+  border: none;
+  font-weight: bold;
+
+}
+
+
+
+/***************************
+Add Overlay buttons Hover
+****************************/
+
+#overlay #btnClose:hover{
+  color: white;
+}
+
+#overlay #btnNext:hover{
+  color: white;
+}
+
+#overlay #btnPrev:hover{
+  color: white;
+}
+
+/****************************
+Remove Overlay Buttons Outline
+*****************************/
+
+#overlay #btnNext:focus {
+  outline:none;
+}
+
+#overlay #btnPrev:focus {
+  outline:none;
+}
+
+#overlay #btnClose:focus {
+  outline:none;
+}
+
+
+/*******************
+
+MEDIA QUIRIES
+******************/
+
+@media screen and (max-width: 400px) {
+
+  .futer .right {
+    display: none;  
+  }
+ #brand {
+  font-size: 1.5em;
+ } 
+ 
+}
+
+@media only screen and (max-width: 600px){
+  .quotation {
+    display: none;
+  }
+
+
+}
+
+@media screen and (min-width: 601px) {
+
+
+
+  .quotation {
+    font-size: .7em;
+    float: right;
+    width: 200px;
+    margin-right: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    clear: both;
+   
+  }
+
+
+/*********************
+Gallery
+**********************/
+
+.lightbox li {
+    display: inline-block;
+ 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 6%;
+    width: 40%;
+    height: 50%;
+    background-color: rgba(0,0,0,0.06);
+     border-radius: 10px;
+    
+}
+
+.lightbox img {
+   width: 85%;
+   height: 200px;
+
+}
+
+
+.nature {
+  margin-top: 10px;
+  margin-left: 40px;
+  color: #696969;
+  font-family: 'kalam', sans-serif; 
+}
+
+.inter {
+  margin-bottom: 5px;
+}
+
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 764px) {
+
+ 
+  .hamburger {
+    padding: 15px;
+    display: block;
+  }
+   
+  #brand2 {
+    display: none;
+    font-family: 'Oswald', sans-serif;
+
+
+  }
+
+
+  .line {
+    border-bottom: 4px solid #4b0082;
+    width: 35px;
+    margin-bottom: 6px;
+  }
+  
+  .line:last-child {
+    margin-bottom: 0;
+  }
+
+  nav li {
+    width: 100%;
+  }
+  
+  .menu {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s linear;
+  }
+
+  .navigator {
+    position: relative;
+    bottom: 120px;
+  }
+ 
+  .slide-down {
+    height: 185px;
+    background-color: rgba(0,0,0,0.4);
+  }
+
+}
+
+
+
+@media screen and (min-width: 765px) {
+   
+
+
+  #brand2 {
+    float: left;
+    padding: 0;
+    margin-top: -50px;
+    margin-left: 50px;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #4b0082;
+    font-family: 'Oswald';
+    text-shadow: 5px 8px 8px grey;
+
+  }
+
+   .quotation {
+    float: right;
+    margin-top: 50px;
+    margin-right: 30px;
+    width: 200px;
+    text-align: center;
+    font-size: 1em;
+
+    
+  }
+ 
+ .menu {
+   position: relative;
+   bottom: 40px;
+ }
+
+ .menu li{
+   display: inline-block;
+   margin-right: 10px;
+   padding-right: 10px;
+   padding-top: 0;
+   transition: transform .5s;
+   font-size: .8em;
+   position: relative;
+   bottom: 15px;
+   left: 20px;
+    
+ }
+
+ .menu li:hover {
+    transform: scale(1.2);
+
+ }
+
+ .menu a {
+  color: #4b0082;
+  font-size: 1.3em
+ }
+
+ /*******************
+ 
+ Gallery
+
+ ********************/
+
+.navigator li {
+
+  font-size: .8em;
+  margin-right: 15px;
+  padding-right: 2px;
+  
+}
+
+.galleryTitle{
+  float: left;
+  margin-left: 50px;
+  margin-top: 55px;
+  color: #4b0082;
+  font-size: 2.5em;
+
+}
+
+.nav2 {
+  height: 80px;
+  background-color: white;
+}
+
+.field {
+  background-color: red;
+  height: 80px;
+}
+
+.lightbox li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 37px;
+    width: 28%;
+    height: 50%;
+    background-color: rgba(0,0,0,0.1);     
+}
+
+.lightbox li:nth-child(3) {
+
+  padding-top: 1.2%;
+
+}
+
+/***************************
+
+About
+****************************/
+
+.about {
+  z-index: 0;
+}
+
+.artgallery {
+  float: left;
+  width: 50%;
+  height: 600px;
+
+}
+
+.artgallery img {
+   
+   width: 100%;
+   margin-top: 150px;
+}
+
+.artgallery a {
+  text-decoration: none;
+}
+
+.artgallery p {
+  text-align: center;
+   margin-top: 20px;
+}
+
+.artgallery p:hover {
+  color: orange;
+}
+
+
+
+.para{
+  margin-top: 200px;
+ 
+}
+
+.bio {
+  float: right;
+  width: 50%;
+  margin-top: 0;
+ 
+
+
+}
+
+
+}
+
+@media screen and (min-width: 867px) {
+  #brand2 {
+   
+    margin-top: 25px;
+
+  }
+
+    .quotation {
+    float: right;
+    margin-top: 50px;
+    margin-right: 100px;
+    width: 200px;
+    text-align: center;
+    font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
