@@ -109,7 +109,7 @@ $("#btnClose").click(function(){
 });
 
 
-//When overlay is clicked
+//When overlay is click
 $overlay.click(function(event){
  // Hide the overlay  
 
