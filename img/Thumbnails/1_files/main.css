@@ -1,0 +1,858 @@
+ /* Global Layout Set-up */
+
+
+* {
+  box-sizing: border-box;
+   max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  background: #ecc363;
+ 
+
+}
+
+/* Link Styles */
+
+a {
+  text-decoration: none;
+}
+
+
+/*************
+
+HOME PAGE
+***************/
+
+
+.nav li {
+  list-style: none;
+  display: block;
+  border: 1px red solid;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-right: 20px;
+  list-style: none;
+ 
+}
+
+.nav li a:hover {
+  background-color: #e6e6fa;
+  border-radius: 10px;
+}
+
+.nav a {
+  color: black; 
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+  padding-right: 0 !important; /* important overrides media queries */
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+.nav a:hover {
+  color: #FFA500;
+}
+
+.thakor {
+  float: right;
+  font-size: 1.7em;
+  padding-top: 8px;
+  margin-right: 70px;
+}
+
+
+/* Card */
+
+.card {
+  background-color: #ecc363;
+  color: black;
+  padding: 20px 60px;
+  max-width: 1050px;
+  text-align: center;
+}
+
+/******************** 
+
+HEADER
+**********************/
+
+.header {
+  text-align: center;
+  background-image: url('../img/main_profile.jpg');
+  background-size: cover;
+  background-repeat:  no-repeat; 
+  background-position: center;
+  overflow: hidden;
+  height: 300px;
+  max-width: 960px;
+  margin-top: 250px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 10px white inset; 
+
+}
+
+
+/*************
+
+GALLERY 
+
+*****************/
+
+.construction {
+  color: brown;
+}
+.under {
+  padding-top: 50px;
+}
+
+.header2 {
+  text-align: center;
+  overflow: hidden;
+  background-color: #ecc363;
+  height: auto;
+  margin-top: 230px;
+   /*background-color: rgba(0, 0, 0, 0.1);*/
+}
+
+
+.murray {
+  color: black;
+  font-size: .7em;
+  font-weight: bold;
+}
+
+.quote p {
+  padding: 10px;
+}
+
+
+/******************
+Light Gallery
+*******************/
+  
+.buy_icon {
+ position: relative;
+ top: 10px;
+}
+
+.fa-shopping-cart {
+    font-size: 2em;
+    color: black;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+
+.fa-shopping-cart:hover {
+    background-color: grey;
+  }
+  
+
+.gallery_blurb {
+  margin-top: 100px;
+  margin-bottom: 10px;
+  font-size: 1em;
+ }
+
+.sentence {
+  color: black;;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  font-size: 1em;
+  margin-top: -90px;
+  color: green;
+}
+
+img:hover {
+transform:skewY(1.5deg);
+
+}
+
+.lightbox img {
+  border: 2px white solid;
+  border-radius: 10px;
+}
+
+#lightgallery  {
+ /* list-style: none;*/
+  max-width: 980px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#lightgallery a {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   /* margin-left: 6%;*/
+    width: 90%;
+   
+    background-color: transparent;
+     border-radius: 10px;
+    
+}
+
+#lightgallery img {
+   width: 85%;
+   height: 200px;
+}
+
+
+
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+} 
+
+
+/*************
+
+ABOUT
+***************/
+
+.wrapped {
+  max-width: 1060px;
+  margin: auto;
+}
+
+.drawing {
+  text-align: center;
+  background-size: cover;
+  background-image: url('../img/Thakor_about.jpg');
+  background-repeat:  no-repeat; 
+  background-position: center;
+  overflow: hidden;
+  width: 80%;
+  margin-top: 230px;
+  border: 2.5px solid white;
+  padding-top:  370px;
+  border-radius: 10px;
+    box-shadow: 0 0 8px 10px white inset; 
+  }
+
+.header3 {
+  text-align: center;
+}
+
+.header3 p{
+    padding: 20px;
+}
+
+.weaver a {
+  color: brown;
+}
+
+
+/***************
+ FOOTER 
+ ****************/
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+  clear: both;
+  text-align: center;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+  color: grey;
+  font-weight: ;
+}
+
+footer .copyright a {
+  color: grey;
+  font-weight: bold;
+}
+
+footer .copyright a:hover{
+   color: black;
+}
+
+
+
+a.social {
+  display: inline-block;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: 1;
+  transition: all .5s;
+  background-color: #708090;
+  margin-top: 50px;
+}
+
+a.social:hover {
+  opacity: 1;
+   background-color: #708090;
+  border-radius: 50%;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+
+
+}
+
+.top {
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+.top a{
+  color: white;
+  background-color: grey;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid white;
+
+}
+
+.top a:hover {
+  background-color: red;
+}
+
+
+
+/*#thakor_toggle {
+  position: relative;
+  left: 100px;
+  bottom: 45px;
+  color: red;
+}*/
+
+/************************ 
+MEDIA QUERIES 
+*************************/
+ @media screen and (min-width: 500px) {
+
+.nav li  {
+  margin-left:0;
+  display: block
+}
+
+#lightgallery a {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40%;
+    height: 40%;
+    background-color: transparent;
+     border-radius: 10px;    
+}
+
+.quote {
+  margin-top: -30px;
+
+  }
+
+}
+
+@media screen and (min-width: 550px) {
+
+/************
+HOME PAGE
+*************/
+
+
+
+ 
+ .nav li {
+  width: 160px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  list-style: none;
+
+}
+
+
+.thakor {
+  font-size: 1.95em;
+  padding-top: 8px;
+  margin-left: 15px;
+}
+
+.nav {
+  padding-top: 8px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+
+.main-nav3 {
+
+    margin-top: -110px;
+
+}
+
+.header {
+  max-width: 960px;
+  width: 90%;
+  margin-top: 150px;
+}
+
+.card {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.flex {
+
+}
+
+footer {
+  text-align: center;
+}
+
+/**********
+GALLLERY
+
+**********/
+
+#lightgallery {
+    margin-top: -70px;
+
+}
+
+.gallery_blurb {
+  width: 100%;
+  margin-top: -10px; 
+}
+
+.sentence {
+    margin-top: -140px;
+}
+
+
+/*************
+ABOUT PAGE
+***************/
+
+.drawing {
+  width: 80%;
+  border: 2.5px solid white;
+  padding-top:  400px;
+  margin-top: 110px;
+}
+
+
+
+.header2 {
+  margin-top: 100px;
+
+   
+}
+
+.header2 p{
+  padding: 80px;
+}
+
+.profile_img {
+ 
+   width: 170px;
+  height: 170px;
+  margin-top: 70px;
+  border: 2px solid white;
+ 
+}
+
+
+  }
+
+  @media screen and (min-width: 601px) {
+
+/******
+
+HOME
+******/
+
+.thakor {
+  float: right;
+}
+
+    /*** HOME ****/
+
+ .nav li {
+  display: inline-block;
+ }
+
+
+    /***About****/
+
+ .wrapped {
+  margin-top: 100px;
+ 
+ }
+
+ .main-nav3{
+  border-bottom: 2px solid grey;
+
+ }
+
+ .drawing {
+  text-align: center;
+  background-size: cover;
+  background-repeat:  no-repeat; 
+  background-position: center;
+  overflow: hidden;
+  width: 50%;
+  margin-top: 20px;
+  padding-top:  500px;
+  float: left;
+  margin-left: 20px;
+  border-radius: 10px;
+
+  }
+
+.header3 {
+  width: 45%;
+  margin-top: 20px;
+  border-bottom: 1px solid green;  
+  float: right;
+  margin-right: 5px;
+
+}
+
+.header3 p{
+  padding: 10px;
+}
+
+
+
+/*********************
+Gallery
+**********************/
+
+.lightbox li {
+    display: inline-block;
+ 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 6%;
+    width: 40%;
+    height: 50%;
+    background-color: rgba(0,0,0,0.06);
+     border-radius: 10px;
+    
+}
+
+.lightbox img {
+   width: 85%;
+   height: 200px;
+}
+
+
+
+.nature {
+  margin-top: 10px;
+  margin-left: 40px;
+  color: #696969;
+  font-family: 'kalam', sans-serif; 
+}
+
+.inter {
+  margin-bottom: 5px;
+}
+
+.quote {
+  max-width: 800px;
+}
+
+  }
+
+
+  @media only screen and (max-width: 700px) {
+
+/************
+
+HAMBURGER MENU
+***********/
+
+  .hamburger {
+    padding: 15px;
+    display: inline-block;
+    border-radius: 20%;
+    max-width: 100px;
+  }
+   
+  
+
+  .line {
+    border-bottom: 4px solid #4b0082;
+    width: 35px;
+    margin-bottom: 6px;
+  }
+  
+  .line:last-child {
+    margin-bottom: 0;
+  }
+
+   
+  .menu {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s linear;
+  }
+
+  .slide-down {
+    height: 185px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+  }
+
+}
+
+ 
+
+@media screen and (min-width: 737px) {
+
+
+/******
+
+HOME
+******/
+
+.thakor {
+  float: left;
+}
+
+/*********
+  GALLERY 
+***********/
+
+.sale_icon {
+  margin-bottom: -100px;
+}
+
+.gallery_blurb {
+  width: 70%;
+  height: 100%;
+  margin-top: 30px;
+}
+
+#home_page {
+
+   background-image: url('../img/main_profile.jpg');
+  background-size: cover;
+  background-repeat:  no-repeat; 
+  background-position: center;
+  height: 100vh;
+}
+
+.card {
+  display: none;
+}
+
+
+.home_nav{
+  background-color: transparent;
+  margin-top: 0;
+ 
+}
+
+
+.header {
+
+  display: none;
+
+}
+
+
+.lightbox  {
+    list-style: none;
+    max-width: 980px;
+    padding: 10px;
+    margin: 10px auto;  
+}
+
+#lightgallery a {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 30%;
+    height: 30%;
+    background-color: transparent;
+    border-radius: 10px;    
+}
+
+#lightgallery img {
+   width: 85%;
+   height: 200px;
+}
+
+/*******
+
+ABOUT
+*****/
+
+.header3 {
+   margin-top:40px;
+}
+/************
+
+FOOTER
+*************/
+
+
+#bottom {
+/*  display: none;*/
+/*  background-color: red;*/
+    position: fixed;
+    top: 610px;
+    bottom: 200px;
+ 
+  
+}
+}
+
+
+
+@media screen and (min-width: 765px) {
+
+/*******************
+ 
+ Gallery
+
+ ********************/
+
+
+.galleryTitle{
+  float: left;
+  margin-left: 50px;
+  margin-top: 65px;
+  color: #4b0082;
+  font-size: 2em;
+
+}
+
+.nav2 {
+  height: 80px;
+  background-color: white;
+}
+
+.field {
+ 
+  height: 80px;
+}
+
+.lightbox li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 37px;
+    width: 28%;
+    height: 50%;
+    background-color: rgba(0,0,0,0.1);     
+}
+
+.lightbox li:nth-child(3) {
+
+  padding-top: 1.2%;
+
+}
+
+ .drawing {
+  text-align: center;
+
+  background-size: cover;
+  background-repeat:  no-repeat; 
+  background-position: center;
+  
+
+}
+
+
+/***********
+
+ABOUT
+*********/
+
+.header3 {
+ 
+  margin-top:60px;
+}
+
+
+
+/***************************
+
+OVERLAY
+****************************/
+#overlay img {
+  max-height: 50vh;
+  max-width: 80%;
+  border: 2px solid  white;
+  margin-top: 10%;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
